@@ -55,9 +55,10 @@ function render(array) {
     }
   }
  
-  colors.forEach(element => {
+  colors.forEach(color => {
   for (let index = 0; index < 10; index++) {
-    let Full_Card = new Card(element, index);
+
+    let Full_Card = new Card(color, index);
     cards.push(Full_Card);
     cards.push(Full_Card);
   }
