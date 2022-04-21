@@ -28,9 +28,10 @@
  *      you need to use loops and fill the cards deck in a loop (Hint: You should use `for` loops, )
  *
  */
-let cards = []; // You will use this array in step 6
 
+let cards = []; // You will use this array in step 6
 // Continue the code here 👇🏻
+let colors = ["Yellow","Blue","Red","Green"];
 
 /**
  *
@@ -43,4 +44,23 @@ function render(array) {
     .join("");
 }
 
-render(cards);
+
+  class Card{
+    constructor(color, number) {
+      this.number = number;
+      this.color = color;
+    }
+    image(){
+      return (`./images/${this.color}_${this.number}.png`)
+    }
+  }
+ 
+  colors.forEach(element => {
+  for (let index = 0; index < 10; index++) {
+    let Full_Card = new Card(element, index);
+    cards.push(Full_Card);
+    cards.push(Full_Card);
+  }
+});
+
+  render(cards);
