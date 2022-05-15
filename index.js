@@ -11,7 +11,7 @@
  * 3. (100 points) after creating the class, create 4 objects from the class Card for Green, Blue, Red, and Yellow cards, give them any numbers.
  * 4. (50 points) console.log every single object.
  * 5. (200 points) Add a method to class Card called `image()` that doesn't take any parameter, and it returns a string that represent the image path stored corresponding to card info
- *    The image path is as follows `./images/COLOR_NUMBER.png`
+ *    The imagee path is as follows `./images/COLOR_NUMBER.png`
  *    Examples:
  *  - `./images/Blue_9.png`
  *  - `./images/Yellow_7.png`
